@@ -51,3 +51,5 @@ Three rules worth remembering
 1. Catch specific exceptions. Don't hide every possible error with a generic except.
 2. Don't use exceptions to replace ordinary logic. If you can easily check whether a key exists, do so when appropriate.
 3. Don't silently swallow errors. Sometimes you should log the error or re-raise it rather than returning None.
+
+what would hide a real bug if you wrote except Exception: inside to_int?-> it would only capture one error that originates from the code.

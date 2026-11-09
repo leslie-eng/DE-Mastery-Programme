@@ -1,5 +1,7 @@
-from katas.p04_errors import FetchError
 import pytest
+
+from katas.p04_errors import FetchError
+
 
 @pytest.mark.parametrize(
     "a, b, expected",
@@ -16,4 +18,5 @@ import pytest
 def test_error_handling(a, b, expected):
     value = FetchError
     assert value.to_int(a, b) == expected
-    
+    assert value.require_positive(self, 5) == 5
+    assert value.require_positive(self, 0) == "must be positive"
