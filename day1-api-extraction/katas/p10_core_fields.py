@@ -20,6 +20,7 @@ def extract_core_fields(user):
     
 
 def build_structures(users):
+
     core_dicts = [extract_core_fields(i)
         for i in users
     ]
