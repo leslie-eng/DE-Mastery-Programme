@@ -37,5 +37,5 @@ def build_structures(users):
 core_list, by_id = build_structures(USERS)
 #print(len(core_list), list(by_id.keys()))
 #print(by_id[2]["name"])
-#print(build_structures([{"id": 1, "name": "A"}, {"id": 1, "name": "B"}]))
-print(by_id[1])
+print(build_structures([{"id": 1, "name": "A"}, {"id": 1, "name": "B"}]))
+#print(by_id[1])
